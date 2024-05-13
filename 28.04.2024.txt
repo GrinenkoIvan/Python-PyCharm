@@ -1,0 +1,26 @@
+CREATE TABLE groups(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    group_name TEXT NOT NULL  
+);
+
+CREATE TABLE student(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    surname TEXT NOT NULL,
+    name TEXT NOT NULL,
+    patronymic TEXT NOT NULL,
+    age INTEGER CHECK (age > 16),
+    [group] TEXT NOT NULL,
+    FOREIGN KEY ([group]) REFERENCES student(id)    
+);
+
+CREATE TABLE association(
+    lesson_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    group_id TEXT NOT NULL,
+    FOREIGN KEY (group_id) REFERENCES association(id)
+    FOREIGN KEY (lesson_id) REFERENCES association(id)
+);
+
+CREATE TABLE lessons(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    lesson_title TEXT NOT NULL    
+)
