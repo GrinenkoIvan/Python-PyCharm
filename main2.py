@@ -3015,3 +3015,6 @@
 
 #git branch -d name-of-branch-to-remove;
 
+
+# макроопределение
+
