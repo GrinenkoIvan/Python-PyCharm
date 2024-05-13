@@ -5,8 +5,11 @@ def add_title(title):
             output = func(*args, **kwargs)
             print("=" * 50)
             return output
+
         return wrap
+
     return wrapper
+
 
 class AwardsUserInterface:
     @add_title('Редактирование данных каталога фильмов')
@@ -15,11 +18,12 @@ class AwardsUserInterface:
         print("1 - добавление фильма"
               "\n2 - каталог фильма"
               "\n3 - просмотр определённого фильма"
-              # "\n4 - перемотка фильма"
-              # "\n5 - монтаж фильма"
+              "\n4 - перемотка фильма"
+              "\n5 - монтаж фильма"
               "\n4 - удаление фильма"
               "\nq - выход из программы")
         user_awards = input("Выберите вариант действия: ")
+        print("= * 50")
         return user_awards
 
     @address('Создание фильма')
@@ -30,14 +34,21 @@ class AwardsUserInterface:
             "режисёр": None,
             "год выпуска": None,
             "длительность": None,
-            "студия": None,
+            #"студия": None,
             "актёры": None,
             # "кассовый сбор": None
         }
-
+        print(" Создание фильма: ".center(50, "="))
         for key in dict_awards:
-            dict_awards[key] = input(f"Введите {key} : ")
+            dict_awards[key] = input(f"Введите  {key} статьи: ")
+        print("=" * 50)
         return dict_awards
+
+    def show_all_awards(self, awardes):
+        print("Список фильмов: ".center(50, "="))
+        for ind, awards in enumerate(awardes, start=1):
+            print(f"{ind}. {awards}")
+        print("=" * 50)
 
     @add_title("Каталог фильмов")
     def show_all_movies(self, movies):
