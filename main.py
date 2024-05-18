@@ -1112,7 +1112,7 @@
 
 
 # import random
-# initial = tuple([random.randint(0, 5) for _ in range(10)])
+# initial = tuple([random.randint(0, 50) for _ in range(7)])
 # print(initial)
 # other = tuple([random.randint(-5, 0) for _ in range(10)])
 # print(other)
@@ -5251,3 +5251,10 @@
 # msg = tm.render()
 #
 # print(msg)
+
+# ----------------------------------------------------------------------------------------------
+#    18.05.2024----------------------------------------------
+
+# Flask
+# Django
+

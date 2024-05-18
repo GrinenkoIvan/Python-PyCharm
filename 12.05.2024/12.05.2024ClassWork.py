@@ -143,3 +143,11 @@
 # msg = tm.render(list_table=subs)
 #
 # print(msg)
+
+# print(f"{' Ivan ':=^50}")
+# username = input("Как Вас зовут? ")
+# print("Привет", username)
+# print("2 + 2 =", 2 + 2)
+# print(f"{2 ** 0.35:.4f}")
+# print(f"{' IVAN ':<^50}\n", f"{' IVAN ':>^49}")
+
