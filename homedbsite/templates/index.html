@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{ super() }}
+<hr size="5" color="blue">
+<div>
+<p>Содержимое главной страницы. <br>
+Возможно скоро здесь что-то будет <br>
+И уже очень скоро что-то будет</p>
+</div>
+<hr size="5" color="green">
+<div>
+    <p align="center"><input type="button" value="Слева"><<<<input type="button" value="Начнём путешествие">>>><input type="button" value="Справа"> </p>
+    <p align="center"><input type="button" value="Присесть"><<<<<input type="button" value="Пауза в путешествии">>>><input type="button" value="Прилечь"></p>
+    <p align="center"><input type="button" value="<|<|<|<|<"><<<<<input type="button" value="Завершить путешествие">>>><input type="button" value=">|>|>|>|>"></p>
+</div>
+<hr size="5" color="red">
+<section>
+    <p>Для быстрого закрашивания выделенной области цветом переднего плана
+        используйте комбинацию клавиш <kbd>&lt;Alt&gt;+&lt;Backspace&gt;</kbd>
+        или <kbd>&lt;Alt&gt;+&lt;Delete&gt;</kbd>.
+        Для закрашивания выделенной области фоновым цветом
+        воспользуйтесь комбинацией
+        <kbd>&lt;Ctrl&gt;+&lt;Backspace&gt;</kbd> или
+        <kbd>&lt;Ctrl&gt;+&lt;Delete&gt;</kbd>
+    </p>
+</section>
+<hr size="5" color="black">
+
+{% endblock %}
