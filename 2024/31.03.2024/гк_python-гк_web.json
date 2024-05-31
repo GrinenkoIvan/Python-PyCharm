@@ -1,0 +1,46 @@
+{
+  "Groups": [
+    {
+      "Group": "\u0413\u041a Python",
+      "Students": [
+        {
+          "Name": "Bodnya",
+          "Marks": [
+            5,
+            4,
+            3,
+            4,
+            5,
+            3
+          ]
+        },
+        {
+          "Name": "Nikolaenko",
+          "Marks": [
+            2,
+            3,
+            5,
+            4,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "Group": "\u0413\u041a Web",
+      "Students": [
+        {
+          "Name": "Birukov",
+          "Marks": [
+            3,
+            5,
+            3,
+            2,
+            5,
+            4
+          ]
+        }
+      ]
+    }
+  ]
+}
