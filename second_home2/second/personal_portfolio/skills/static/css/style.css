@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+font-family: "Roboto", sans-serif;
+padding: 0;
+margin: 0;
+background-color: rgb(41, 61, 73);
+
+}
+.wrap{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-position: center;
+    background-image: url(../../static/skills/1599145101_9.jpg);
+}
+.block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+}
+.element, .count{
+background: rgb(220, 255, 133);
+border: 6px solid #6bc0dc;
+margin: 20px 10px;
+}
+.block img{
+    max-width: 360px;
+}
+.text{
+    width: 360px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.content h1{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 30px;
+}
+.img + h2, .text h2{
+text-align: center;
+
+}
+.img img{
+    border: 6px solid #191111;
+}
+.img{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+
+
