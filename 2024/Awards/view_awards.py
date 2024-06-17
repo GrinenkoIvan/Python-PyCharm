@@ -1,13 +1,11 @@
 def add_title(title):
     def wrapper(func):
         def wrap(*args, **kwargs):
-            print(f"{title}".center(50,"="))
+            print(f"{title}".center(50, "="))
             output = func(*args, **kwargs)
             print("=" * 50)
             return output
-
         return wrap
-
     return wrapper
 
 
@@ -23,10 +21,10 @@ class AwardsUserInterface:
               "\n4 - удаление фильма"
               "\nq - выход из программы")
         user_awards = input("Выберите вариант действия: ")
-        print("= * 50")
+        # print("=" * 50)
         return user_awards
 
-    @address('Создание фильма')
+    @add_title('Создание фильма')
     def add_user_awards(self):
         dict_awards = {
             "название": None,
@@ -40,8 +38,8 @@ class AwardsUserInterface:
         }
         print(" Создание фильма: ".center(50, "="))
         for key in dict_awards:
-            dict_awards[key] = input(f"Введите  {key} статьи: ")
-        print("=" * 50)
+            dict_awards[key] = input(f"Введите  {key} фильма: ")
+        # print("=" * 50)
         return dict_awards
 
     def show_all_awards(self, awardes):

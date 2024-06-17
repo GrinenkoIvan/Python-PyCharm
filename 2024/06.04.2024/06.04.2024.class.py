@@ -97,13 +97,13 @@
 # response = requests.get("https://jsonplaceholder.typicode.com/todos")
 # # print(type(response.text))
 # # print(response.text)
-# todos = json.loads(response.text)
-# # print(type(todos[0]))
-# # print(todos)
+# todo = json.loads(response.text)
+# # print(type(todo[0]))
+# # print(todo)
 #
 # todos_by_user = {}  # {} {1: 10, 2: 5, 3: 6}
 #
-# for todo in todos:
+# for todo in todo:
 #     if todo['completed']:
 #         try:
 #             todos_by_user[todo["userId"]] += 1
@@ -144,7 +144,7 @@
 #
 #
 # with open('filter.json', 'w') as f:
-#     filter_todos = list(filter(keep, todos))
+#     filter_todos = list(filter(keep, todo))
 #     json.dump(filter_todos, f, index=2)
 # разобраться и исправить ошибку
 

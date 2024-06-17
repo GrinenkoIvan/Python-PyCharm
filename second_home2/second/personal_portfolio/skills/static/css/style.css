@@ -22,8 +22,8 @@ background-color: rgb(41, 61, 73);
 }
 .element, .count{
 background: rgb(220, 255, 133);
-border: 6px solid #6bc0dc;
-margin: 20px 10px;
+border: 6px solid #323435;
+margin: 20px 5px;
 }
 .block img{
     max-width: 360px;

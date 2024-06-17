@@ -8,7 +8,7 @@ class Awards:
         self.removal = removal
 
     def __str__(self):
-        return f"{self.addendum} ({self.catalog}"
+        return f"{self.addendum} ({self.catalog}{self.viewing})"
 
 
 class AwardsModel:
@@ -21,3 +21,19 @@ class AwardsModel:
 
     def get_all_awards(self):
         return self.awardss.values()
+
+    def get_single_awards(self, name_film):
+        catalog = self.awardss[name_film]
+        dict_catalog = {'название фильма': catalog.name_film,
+                        'жанр': catalog.genre,
+                        'режиссер': catalog.director,
+                        'год выпуска': catalog.year_release,
+                        'длительность': catalog.duration_film,
+                        'студия': catalog.studio,
+                        'актеры': catalog.actors,
+                        }
+        return dict_catalog
+
+
+    def remove_single_movie(self, name_film):
+        return self.awardss.pop(name_film)

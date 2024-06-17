@@ -1,0 +1,31 @@
+{% extends 'base_home.html' %}
+
+{% block content %}
+  {{ super() }}
+
+  {% for category, msg in get_flashed_messages(True) %}
+    <div class="flash {{ category }}">{{ msg }}</div>
+  {% endfor %}
+
+  <form action="{{ url_for('add_home') }}" method="post">
+    <p>Курс Python</p>
+    <p>14110 руб/мес</p>
+    <p>Учебная программа. "Пограммирование на Python" создана для тех кто хоче освоить 3й по популярности язык в мире,
+    и создавать на нём от простых приложений до высоконагруженных web-сервисов</p>
+    <p><input type="submit" value="Купить"></p>
+  </form>
+  <form action="{{ url_for('add_home') }}" method="post">
+    <p>Разработка на Java </p>
+    <p>6070 руб/мес</p>
+    <p>Основам программирования на языке Java; Пригципам объектно-ориентированного программирования;
+      Понимать механизмы многопоточности Java; Уметь сериализовать т парсить данные используя JSON</p>
+    <p><input type="submit" value="Купить"></p>
+  </form>
+  <form action="{{ url_for('add_home') }}" method="post">
+    <p>Курс Front-end</p>
+    <p>7300 руб/мес</p>
+    <p>Введение в web-технологий. Структура HTML. Форматирование текста с помощью HTML.
+      Управлять браузерами и элементами HTML-страниц с помощью JavaScript. Владеть фреймворсами React и Angular</p>
+    <p><input type="submit" value="Купить"></p>
+  </form>
+{% endblock content %}

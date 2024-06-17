@@ -81,11 +81,11 @@
 # import requests
 #
 # response = requests.get("https://jsonplaceholder.typicode.com/todos")
-# todos = json.loads(response.text)
-# with open("todos.csv", "w") as f:
-#     writer = csv.DictWriter(f, delimiter=";", lineterminator="\r", fieldnames=list(todos[0].keys()))
+# todo = json.loads(response.text)
+# with open("todo.csv", "w") as f:
+#     writer = csv.DictWriter(f, delimiter=";", lineterminator="\r", fieldnames=list(todo[0].keys()))
 #     writer.writeheader()
-#     for d in todos:
+#     for d in todo:
 #         writer.writerow(d)
 
 # ------------------------------------------------------------------------------------------------------------

@@ -1,8 +1,16 @@
 {% extends 'base.html' %}
 
 {% block content %}
-{{ super() }}
+  {{ super() }}
 
-Содержимое главной страницы
-
-{% endblock %}
+  <hr>
+  <h2>Список статей</h2>
+  <ul>
+    {% for post in posts %}
+    <li>
+      <p class="title"><a href="{{ url_for('show_post', alias=post.url) }}">{{ post.title}}</a></p>
+      <div class="annonce">{{ post.text[:240] | striptags }}</div>
+    </li>
+    {% endfor%}
+  </ul>
+{% endblock content %}
