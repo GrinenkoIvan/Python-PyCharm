@@ -3048,4 +3048,259 @@
 # print(mixed_greeting.greet_formal("Иван"))
 # print(mixed_greeting.greet_informal("Катюша"))
 
+# dct = {
+# 	1: 'text1',
+# 	2: 'text2',
+# 	3: 'text3'
+# }
+#
+# dct.clear()
+# dct[4] = 'text4'
+# print(dct)
 
+# tpl = ('a', 'b', 'c', 'd', 'e', 'f')
+# res = ''.join(tpl)
+# print(res)
+
+# def func(num1, num2, *args):
+#     return sum(args) + (num1 * num2)
+#
+#
+# print(func(10, 5, 1, 2, 3)) # 56
+
+# dct = {
+# 	1: 'x',
+# 	2: 'y',
+# 	3: 'z',
+# 	4: 'w'
+# }
+#
+# print(3 in dct)
+
+# dct = {
+# 	1: 'x',
+# 	2: 'y',
+# 	3: 'z',
+# 	4: 'w'
+# }
+
+# print(dct.get(4)) # w
+# print(dct.get('a', 'Нет ключа')) # Нет ключа
+
+# tst = ('a', 1), ('b', 2), ('c', 3)
+# dct = dict(tst)
+
+# print(dct)
+
+# tst = {'x', 'y', 'z'}
+# print(type(tst))
+
+# st = {'a', 'b', 'c', 'd'}
+# print(st)
+
+# st = {'x', 1, 'y', 2, 'z', 3, 'w'}
+# print(len(st)) #7
+#
+# prog = True
+#
+# def fun1():
+#     global prog
+#     prog = None
+#
+#     def fun2():
+#         rpog = 'py'
+#
+#     fun2()
+# fun1()
+# print(prog)# None
+
+# e = [1] + "1"
+# print(e)#  ошибка
+
+# for i in range(5):
+#     if i % 2 == 0:
+#         continue
+#     print(i)# 1 3
+
+# old = {'a': 10, 'b': 10}
+# new = {}
+# for i, j in old.items():
+#     new[j] = i
+# print(new) # {10: 'b'}
+
+# c = [1, 2] + [0]
+# print(c)# [1, 2, 0]
+
+# a = set("hello")
+# print(len(a)) # 4
+
+# b = "python"
+# print(b[:6:2]) # pto
+
+# c = "some str"
+# print(c[-3:9] + " " + c[0:5]) #str some
+
+# d = {1, 2} == set([1, 2])
+# print(d) # True
+
+# e = id({1}) == id({1})
+# print(e)  # True
+
+# a = 1
+# for i in range(5):
+#     a = a * i
+# print(a) # 0
+
+# for i in 'hello world':
+#     if i == 'o':
+#         break
+#     print(i * 2, end='') # hheellll
+
+# an = {'a': {'a': ['a']}}
+# print(an.pop('a') == an.clear()) # False
+
+# t1 = (1, 2, 3)
+# t2 = (4, 5, 6)
+# t3 = t1 + t2
+# print(t1 < t2) # True
+# print(t2 < t3) # False
+# print(t1 < t3) # True
+
+# import random
+# print(2.1 == random.uniform(2.1, 2.1)) # True
+
+# a = {'a': 10, 'c': 30}
+# b = {'c': 20, 'e': 5}
+# for i in a.keys():
+#     if i not in b:
+#         b[i] = a[i]
+# print(b) # {'c': 20, 'e': 5, 'a': 10}
+
+# def g(a=2, b=3):
+#     print(a + b)
+#
+# g(4) # 7
+
+# for i in range(len("str")):
+#     if i != 2:
+#         print("str"[i], end="-")
+#     else:
+#         print("str"[1])# s-t-t
+
+# b = lambda: print("str")
+# type(b()) # str(тип данных строка)
+
+# dict = {{{'socrat': 'emply'}: {'plato': 'a lot of'}}: 'again'}
+# key = {'socrat': 'emply'}
+# print(dict[key]['plato']) # TypeError: unhashable type: 'dict'
+
+# try:
+#     b = 1 / 0
+# except ZeroDivisionError:
+#     b = 0
+#
+# print(b)  # 0
+
+# d = [1,1,2]
+# print(len(set(d))) # 2
+
+# try:
+#     a = 2 + '1'
+#     print(a)
+# except TypeError:
+#     print("error") # error
+
+# a=10
+# print(c) # NameError:
+
+# for i in range(-2):
+#     print(i) # Ничего не выведет
+
+# for i in "str":
+#     print(i.upper(), end=".") # S.T.R
+
+# c = id([1]) == id([1.0])
+# print(c) # True
+
+# n = 3.4567
+# print(f'{n:.2f}') # 3.46
+
+# for i in range(1):
+#     print(i) # 0
+
+# prog = True
+#
+#
+# def fun1():
+#     prog = None
+#
+#     def fun2():
+#         global prog
+#         prog = 'py'
+#
+#     fun2()
+#
+#
+# fun1()
+# print(prog)  # py
+
+# a = [1] + [1]
+# print(a) # 1,1
+
+# while 1:
+#     print(1, break) # ошибка
+
+# a = [1, 2] - 1
+# print(a) # ошибка
+
+# c = "str"
+# print(c[0:3]) # str
+
+# b = lambda x, y: print(y)
+# b(1, 2) # 2
+
+# def factorial(n):
+#     if n == 0:
+#         return 1
+#     else:
+#         return n * factorial(n - 1)
+#
+# print(factorial(5))  # 120
+
+# a = lambda x: x + x
+# print(a(2)) # 4
+
+# d = "some string"
+# d[5:12] = "int"
+# print(d) # ошибка
+
+# for i in 'hello world':
+#     print(i * 2, end='') # hheelllloo  wwoorrlldd
+
+# d = {}
+# if d:
+#     print("hello, world")
+# else:
+#     print("it is emply") # Yes
+
+# import random
+#
+# print(random.uniform(1, 1.1))
+
+# b = [1,2,3] + []
+# print(b)
+
+# num = float(2)
+# print(num)
+
+# b = set("ppp")
+# print(str(b) == "p")
+
+# class Test:
+#     def print_text(self):
+#         print("ccc")
+# class Test2(Test):
+#     def print_text(self):
+#         print("vvv")
+# test2 = Test2()
+# test2.print_text()
