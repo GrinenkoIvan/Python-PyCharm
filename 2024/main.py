@@ -1,12 +1,15 @@
 # print("Hello,", name)
+from this import i
+
+
 # import random
 
 
 # age = 20.4
-# print(age)
-# text = "Hello"
-# print(text)
-# print(text + str(age))
+# print(type(age))  # <class 'float'>
+# text = "Hello world "
+# print(type(text))  # <class 'str'>
+# print(text + str(age)  # Hello world 20.4
 # print(type(age))  # числовое значение int - 20, float 20.4
 # print(type(text))  # str - "Hello"
 # a = False
@@ -73,16 +76,14 @@
 # print(6 ** 2)
 # print(6 % 4)  # остаток от деления
 
-
 # Домашняя работа от 11.11.2023
 
-# a = 5
+# a = 1
 # b = 7
 # c = 3
 # print("Сумма чисел:", a + b + c)
 # print("Произведение чисел:", a * b * c)
 # print("Среднее арифметическое:", (a + b + c) / 3)
-
 
 # ______________Классная работа от 12.11.2023______________________________#
 
@@ -152,7 +153,6 @@
 
 # print(5 - 3 == 2 and 1 + 3 == 4)
 # print(5 - 3 == 2 and 1 + 3 < 4)
-
 
 # print(5 - 3 == 2 or 1 + 3 == 4)  # True
 # print(5 - 3 == 2 or 1 + 3 < 4)  # True
@@ -278,7 +278,6 @@
 # ------------ 18.11.2023 ----------------#
 
 #    Классная работа     #
-
 
 # n = int(input("Введите количество ворон: "))
 # if <= 0 <= 9:
@@ -426,7 +425,6 @@
 #         print(symbol)
 #     i += 1
 
-
 # ----------------------------------------------------------------
 # 19.11.2023
 
@@ -561,7 +559,6 @@
 #     if a % 10 == i // 100:
 #             print(i, end=" ")  #  перепроверить и решить
 
-
 #  02.12.2023____------------------
 # a = [1, 2, 3]
 # b = a.copy()
@@ -573,7 +570,6 @@
 # print("b =",b)
 # b.append(120)
 
-
 # a = [5, 4, 1, 2, 3]
 # print(a)
 # # a.reverse()
@@ -583,7 +579,6 @@
 # # print(a)
 # a.sort(reverse=True)
 # print(a)
-
 
 # b =["Виталий","Сергей","Александр","Анна"]
 # b.sort(key=len, reverse=True)
@@ -599,7 +594,6 @@
 
 #  Генерация случайных данных  ----->----------->-------------->------------->------------->
 
-
 # print(random.random())
 # print(random.randint(3, 9))
 # print(random.randrange(3, 9))
@@ -611,7 +605,6 @@
 # print(random.choices(city_list, k=3))
 # random.shuffle(city_list)
 # print(city_list)
-
 
 # s = [55, 66, 77, 88, 99, 9, 8, 7, 6, 5, 4, 1, 2, 3]
 # print(random.choice(s))
@@ -701,7 +694,6 @@
 
 #  ----- Домашняя работа от 02,12,2023
 
-
 # import random
 #
 # print(random.sample(range(1, 10+1), 10))
@@ -750,7 +742,6 @@
 # ]
 # print(matrix)
 
-
 # import random
 # w, h = 3, 4
 # col_vo = 0
@@ -763,10 +754,8 @@
 #         print(col_vo)
 #     print()               #работает но подделать
 
-
 # for x, y in [[1, 2], [3, 4], [5, 6], [7, 8]]:
 #     print(x, "+", y, "=", x + y)
-
 
 # import random
 #
@@ -840,19 +829,17 @@
 # get_sum(x, y)
 # get_sum("abc", "def")
 
-
 # def symbol(count, a, b):
 #     for i in range(count):
 #         if i % 2 == 0:
-#             print(a, end="")
+#             print(a, end="?")
 #         else:
-#             print(b, end="")
+#             print(b, end=".")
 #     print()
 #
 #
 # symbol(9, '+', '-')
-# symbol(7, 'x', 'y')
-
+# symbol(7, 'van', 'san')
 
 # def get_sum(a, b):
 #     print("Сумма:", end="")
@@ -872,7 +859,6 @@
 #
 # print(maximum(9, 16))
 
-
 # def maximum(one, two):
 #     if one > two:
 #         return one - two
@@ -881,7 +867,6 @@
 #
 #
 # print(maximum(8, 9))
-
 
 # def cube(a):
 #     return a ** 3   # a * a * a
@@ -917,7 +902,6 @@
 # else:
 #     print(b, "больше", a)
 #
-
 
 # def check_password(password):
 #     has_upper = False
@@ -990,7 +974,6 @@
 # print(digit_sum(38271, even=False))
 # print(digit_sum(123456789, even=False))
 
-
 # def display_info(name, age):
 #     print("Name:", name, "\nAge", age)
 #
@@ -1013,7 +996,6 @@
 # print(n == m)
 # print(n is m)
 
-
 #  Кортеж (tuple) --------------------------------------------------------
 
 # lst = [10, 20, 30]
@@ -1027,7 +1009,6 @@
 # # print(type(b))
 # print(a)
 # # print(b)
-
 
 # n = [1, 2, 3]
 # b = tuple(("Hello", "Python"))
@@ -1110,7 +1091,6 @@
 #
 # print(first, year, setr)
 
-
 # import random
 # initial = tuple([random.randint(0, 50) for _ in range(7)])
 # print(initial)
@@ -1119,7 +1099,6 @@
 # upshot = initial + other
 # print(upshot)
 # print("0 = ", upshot.count(0))
-
 
 # 10.12.2023 --------------------------------------------------------------------
 
@@ -1144,7 +1123,6 @@
 #     for city in cities:
 #         city_name, city_population = city
 #         print("\tГород", city_name, "Город", city_population)
-
 
 # ---------- Домашняя работа от 09.12.2023, случайные списки кортежа от 0 до 5 и от -5 до 0,
 # сложить оба картежа и вывести в ответ сколько выпадает случайных чисел 0.-------------------
@@ -1175,7 +1153,6 @@
 #
 # print(tpl1, tpl2, tpl3, '0 = ' + str(tpl3.count(0)), sep='\n')
 
-
 # -------------Домашняя работа от 10.12.2023 , вывести статистику чачтотности чисел в кортеже----
 # Вариант 1
 # num = str(253523651)
@@ -1200,7 +1177,6 @@
 #     if num not in lst:
 #         lst.append(num)
 #         print(f'Количеств {num} = {tpl.count(num)}')
-
 
 # 16.12.2023   --------------------------------------------------
 
@@ -1343,7 +1319,6 @@
 #         count += 1
 # print("Количество гласных равно: ",(count))
 
-
 # Словарь 'dict'--------------17.12.2023--------------------------------------------------------
 
 # lst = [1, 2, 3]
@@ -1384,7 +1359,6 @@
 # for key in d:
 #     com *= d[key]
 # print('Произведение :', com)
-
 
 # Задача-----------------------
 # d = dict()  вывод варианта 1
@@ -1458,7 +1432,6 @@
 # print("d:", d, id(d))
 # print("d2:", d2, id(d2))
 
-
 # d = {'a': 1, 'b': 2, 'c': 3}
 
 # print(d['e'])
@@ -1503,7 +1476,6 @@
 #
 # print('Количество гласных равно:', len(tmp_list))
 
-
 # 23.12.2023--------------------------------
 
 # d = {'a': 1, 'b': 2, 'c': 3}
@@ -1515,7 +1487,6 @@
 # d.update(d2)
 # print(d)
 
-
 # x = {'a': 1, 'b': 2}
 # y = {'b': 3, 'c': 4}
 # # new_disc = x.copy()
@@ -1524,7 +1495,6 @@
 # new_disc = x | y
 #
 # print(new_disc)   работает
-
 
 # a = {
 #     'first':{
@@ -1542,7 +1512,6 @@
 #     print(x)
 #     for y in a[x]:
 #         print("\t", y, ": ", a[x][y], sep="")  # работает
-
 
 # sales = {"John": {"N": 3056, "S": 8463, "E": 8441, "W": 2694},
 #          "Tom": {"N": 4832, "S": 6786, "E": 4737, "W": 3612},
@@ -1574,11 +1543,9 @@
 # except KeyError:
 #     print('Такого продавца нет.')
 
-
 # d = {"N": 3056, "S": 8463, "E": 8441, "W": 2694}
 # new_d = {value: key for key, value in d.items()}
 # print(new_d)
-
 
 # d = {"N": 1, "S": 2, "E": 3, "W": 4}
 # # new_d = {k: v for k, v in d.items() if v <= 2}
@@ -1600,7 +1567,6 @@
 #
 # value = list(d)
 # print(value)
-
 
 # a = ["one", 1, 2, 3, "two", 10, 20, "three", 15, 36, 60, "four", -20]
 #
@@ -1633,19 +1599,16 @@
 # c = dict(zip(a, b))
 # print(c)
 
-
 # d_one = {'name':"Igor", "Last_name": "Petrov", "job": "Consultant"}
 # d_two = {'name': "Irina", "Last_name": "Irisova", "job": "Manager"}
 # for (k1, v1), (k2, v2) in zip(d_one.items(), d_two.items()):
 #     print(k1, "->", v1)
 #     print(k2, "->", v2)  # работает
 
-
 # d = ([(1, 'one'), (2, 'two'), (3, 'three')])
 # a, b = zip(*d)
 # print(a)
 # print(b)
-
 
 # a = ('one', 'two', 'three')
 # b = [1, 2, 3,]
@@ -1655,13 +1618,11 @@
 # print(s)
 # print(dict(s))
 
-
 # one = {'apple': 0.45, 'orange': 0.35}
 # two = {'pepper': 0.2, 'onion': 0.55}
 # print({**one, **two})  #{'apple': 0.45, 'orange': 0.35, 'pepper': 0.2, 'onion': 0.55}
 # for k, v in {**two, **one}.items():
 #     print(k, "->", v)
-
 
 # data = ["red", "green", "blue"]
 # num = 0
@@ -1680,7 +1641,6 @@
 # for sales, costs, m in zip(total_sales, prod_cost, month):
 #     profit = sales - costs
 #     print("Чистая прибыль в :", m, "=", profit)
-
 
 # 24.12.2023 -----------------------------------------------------
 
@@ -1738,7 +1698,6 @@
 # print(func(1))
 # print(func(1, 2, 3, 4, 5, 6, 7, ))
 
-
 # def print_score(student, *scores):
 #     print("Student Name:", student)
 #     for score in scores:
@@ -1762,7 +1721,6 @@
 #
 # print(func(5,9,7,8,4,3,2,1, k1=11, k2=31, k3=11, k4=91,d=55))
 
-
 # name = "Tom"
 # # print("Глобальная область видимости: ", id(name))
 #
@@ -1782,7 +1740,6 @@
 # bye()
 # print(name)
 
-
 # i = 5
 # def func(arg=i):
 #     print(arg)
@@ -1794,7 +1751,6 @@
 # i = 6
 # func()
 
-
 # def add_five(a):
 #     x = 2
 #
@@ -1805,12 +1761,10 @@
 #
 # print(add_five(5))
 
-
 # sum = 5
 #
 # lst = [9, 5, 8, 7, 6]
 # print(sum(lst))
-
 
 # import builtins
 #
@@ -1820,7 +1774,6 @@
 #     print(t)
 #     print(type(t))
 #     print(dir(t))
-
 
 # n = int(input("Введите количество студентов: "))
 #
@@ -1842,7 +1795,6 @@
 
 #
 
-
 # 30.12.2023-------------------
 
 # def outer(who):
@@ -1853,7 +1805,6 @@
 #      inner()
 #
 # outer()
-
 
 # def fun1():
 #     a=6
@@ -1867,7 +1818,6 @@
 #
 #
 # fun1()
-
 
 # x = 25
 # t = 0
@@ -1889,7 +1839,6 @@
 # c = x + t
 # print(c)
 
-
 # def fn1():
 #     x = 25 # 2
 #
@@ -1909,7 +1858,6 @@
 #
 # fn1() # 1
 
-
 # def outer(a1,b1,a2,d2):
 #     a = 0
 #     b = 0
@@ -1925,7 +1873,6 @@
 # res = outer(2,3,-1,4)
 # print(res) # [список [1, 7 ]]
 
-
 # Замыкание --------------------------------
 
 # def outer(n):
@@ -1940,7 +1887,6 @@
 #
 # item2 = outer(5)
 # print(item2(1))
-
 
 # def func1():
 #     a = 1
@@ -1959,7 +1905,6 @@
 #
 # func = func1()
 # print(func())
-
 
 # def func(city):
 #     s = 0
@@ -1983,13 +1928,11 @@
 
 # lambda(анонимная функция)
 
-
 # print((lambda x, y: x + y)(1, 2))
 #
 # func = lambda x, y: x + y
 # print(func(1, 2))
 # print(func('a', 'b'))
-
 
 # print((lambda x, y: x ** 2 + y ** 2)(2, 5))
 # print((lambda x, y = 5: x ** 2 + y ** 2)(2, ))
@@ -1997,9 +1940,7 @@
 # print((lambda x = 2, y = 5: x ** 2 + y ** 2)(10, 20))
 # print((lambda x = 2, y = 5: x ** 2 + y ** 2)(y = 10))
 
-
 # print((lambda *args: args)(1, 2, 3, 4, 5))
-
 
 # y = (
 #     lambda x: x * 2,
@@ -2009,7 +1950,6 @@
 # for i in y:
 #     print(i("abc__"))
 #
-
 
 # def outer(n):
 #     def inner(x):
@@ -2036,13 +1976,10 @@
 #
 # print((lambda n: lambda x: x + n)(5)(10))
 
-
 # print((lambda x: lambda y: lambda z: x + y + z) (2)(4)( 6))
-
 
 # def func(item):
 #     return item[1]
-
 
 # d = {'b':3, 'c': 1, 'a': 2}
 # print(d)
@@ -2054,7 +1991,6 @@
 # d1 = dict(lst)
 # print(d1)
 
-
 # player = [
 #     {'name':'Anton', 'last name': 'Bipykov', 'rating': 9},
 #     {'name':'Aleksey', 'last name': 'Bodny', 'rating': 10},
@@ -2065,7 +2001,6 @@
 # print(res)
 # res = sorted(player, key=lambda i: i['rating'], reverse=True)
 # print(res)
-
 
 # a =[
 #     lambda x, y: x + y,
@@ -2083,7 +2018,6 @@
 # print(a[4](5, 2))
 # print(a[5](5, 2))
 
-
 # d = {
 #     1: lambda: print("Понедельник"),
 #     2: lambda: print("Вторник"),
@@ -2096,12 +2030,9 @@
 #
 # d[6]()
 
-
 # print((lambda a, b: a if a > b else b)(15, 23))
 
-
 # print((lambda a, b, c: a if (a < b and a < c) else (b if b < c else c))(18, 19, 17))
-
 
 # Домашняя работа от 30.12.2023---------------------------------------------------------------------------------------
 # from math import pi
@@ -2118,7 +2049,6 @@
 
 # ---------------------------------------------------------------------------------------------------------------------
 
-
 # f = open(r'C:\Users\User\PycharmProjects\pythonProject1\test.txt, mode= 'r')
 # f = open('test.txt', 'r')
 # print(*f)
@@ -2128,7 +2058,6 @@
 # print(f.mode)
 # print(f.name)
 # print(f.encoding)
-
 
 # f = open('test.txt', 'r')
 # print(f.read(3))
@@ -2141,7 +2070,6 @@
 # print(f.readline(9))
 # print(f.readline())
 # f.close()
-
 
 # f = open('test1.txt', 'r')
 # print(f.readlines(16))
@@ -2156,12 +2084,10 @@
 # f.close()
 # print("count =", count)  # подсчитывает количество строк в файле = 3
 
-
 # f = open("xyz.txt", "w")
 # f.write("Hello\nWorld\n")
 #
 # f.close()
-
 
 # f = open("xyz.txt", "a")
 # f.write("New text.\nOpen text in Explorer")
@@ -2171,7 +2097,6 @@
 # f = open("test.txt", "a")
 # f.write("This is a factor")
 # f.close()
-
 
 # f = open("xyz.txt", "w")
 # line = ['This is line 1\n', 'This is line 2']
@@ -2211,20 +2136,17 @@
 
 #
 
-
 # class Stack:
 #     def __init__(self):
 #         print("Hi!")
 #
 # stackObject = Stack()
 
-
 # class Stack:
 #     def __init__(self):
 #         self.__stacklist = [] # инкапсуляция - нельзя переменную увидеть из вне
 # stackObject = Stack()
 # print(len(stackObject.stacklist)) # выход - AttributeError
-
 
 # class Stack:
 #     def __init__(self):
@@ -2249,7 +2171,6 @@
 # print(stackList.pop())
 # print(stackList.pop())
 
-
 # class Stack:
 #     def __init__(self):
 #         self.__stacklist = []
@@ -2271,7 +2192,6 @@
 # stackObject2.push(stackObject1.pop())
 # print(staclObject2.pop())
 
-
 # for i in range(5):
 #     nam = int(input())
 #     nam1 = int(input())
@@ -2280,11 +2200,9 @@
 #
 # print("Вызов завершён")
 
-
 # a = int(input("Введите числитель: "))  #-------------------------------- Программа при делении на 0 делить нельзя.
 # b = int(input("Введите знаменатель: "))
 # print('Результат : ', a/b if b else 'На ноль делить нельзя!!!')
-
 
 # try:
 # 	n = int(input("введите делимое : "))  #---------------------------------- программа с использованием исключений
@@ -2296,7 +2214,6 @@
 # 	print("Всё нормально вы ввели : ", n, "и", m)
 # finally:
 # 	print("конец программы")
-
 
 # n = input("введите число : ") # программа складывае равные по типу данных или конкатенация строк, строк+числа
 # m = input("введите число : ")
@@ -2317,7 +2234,6 @@
 #     if i % 2 == 0:
 #         print("i = ", i)
 #     i += 1
-
 
 # 25.11.2023 -------------------------------
 
@@ -2515,7 +2431,6 @@
 #         break
 # print(b)
 
-
 #  02.12.2023____------------------
 # a = [1, 2, 3]
 # b = a.copy()
@@ -2527,7 +2442,6 @@
 # print("b =",b)
 # b.append(120)
 
-
 # a = [5, 4, 1, 2, 3]
 # print(a)
 # # a.reverse()
@@ -2537,7 +2451,6 @@
 # # print(a)
 # a.sort(reverse=True)
 # print(a)
-
 
 # b =["Виталий","Сергей","Александр","Анна"]
 # b.sort(key=len, reverse=True)
@@ -2553,7 +2466,6 @@
 
 #  Генерация случайных данных  ----->----------->-------------->------------->------------->
 
-
 # print(random.random())
 # print(random.randint(3, 9))
 # print(random.randrange(3, 9))
@@ -2565,7 +2477,6 @@
 # print(random.choices(city_list, k=3))
 # random.shuffle(city_list)
 # print(city_list)
-
 
 # s = [55, 66, 77, 88, 99, 9, 8, 7, 6, 5, 4, 1, 2, 3]
 # print(random.choice(s))
@@ -2655,7 +2566,6 @@
 
 #  ----- Домашняя работа от 02,12,2023
 
-
 # import random
 #
 # print(random.sample(range(1, 10+1), 10))
@@ -2694,7 +2604,6 @@
 #     for x in row:
 #         print(x, end="\t")
 #     print()
-
 
 # 10.02.2024--------------------------------------------------------
 #  в классе могут быть свойства (поля, переменные)
@@ -2779,7 +2688,6 @@
 # # print(h1.get_address())
 # # h1.__set_name__("Юлия")
 # # print(h1.get_name())
-
 
 # ----------------------------------------------------------------
 # Задача
@@ -2868,9 +2776,7 @@
 #
 # print("Численность роботов: ", Robot.k)
 
-
 # 11.02.2024 -------------------------------------------------------------------------------------------------
-
 
 # def set_param(c=20, s="-"):
 #     print(s * c)
@@ -2885,9 +2791,9 @@
 # Множество  (set)
 
 # s = {"banana", "apple", "orange", "banana", "apple"}
-# print(s)
-# print(type(s))
-# print(len(s))
+# print(s)  # {'orange', 'banana', 'apple'}
+# print(type(s))  # <class 'set'>
+# print(len(s))  # 3
 
 # c = ["red", "blue", "green", "red"]
 #
@@ -3021,7 +2927,6 @@
 #         count += 1
 # print("Количество гласных равно: ",(count))
 
-
 # Словарь 'dict'--------------17.12.2023
 
 # lst = [1, 2, 3]
@@ -3062,7 +2967,6 @@
 # for key in d:
 #     com *= d[key]
 # print('Произведение :', com)
-
 
 # Задача-----------------------
 # d = dict()  вывод варианта 1
@@ -3107,7 +3011,6 @@
 # for i in goods:
 #     print(i, ")", goods[i][0], " - ", goods[i][1], "шт. по ", goods[i][2], "руб", sep="")
 
-
 # d = {'a': 1, 'b': 2, 'c': 3}
 #
 # print(d.keys()) # список ключей
@@ -3135,7 +3038,6 @@
 # d.clear()
 # print("d:", d, id(d))
 # print("d2:", d2, id(d2))
-
 
 # d = {'a': 1, 'b': 2, 'c': 3}
 
@@ -3165,7 +3067,6 @@
 # print(item,item_1)
 # print(d_dict)
 
-
 # 23.12.2023------------------------------------------------------------------------------------------------
 
 # d = {'a': 1, 'b': 2, 'c': 3}
@@ -3177,7 +3078,6 @@
 # d.update(d2)
 # print(d)
 
-
 # x = {'a': 1, 'b': 2}
 # y = {'b': 3, 'c': 4}
 # # new_disc = x.copy()
@@ -3186,7 +3086,6 @@
 # new_disc = x | y
 #
 # print(new_disc)   # работает
-
 
 # a = {
 #     'first':{
@@ -3204,7 +3103,6 @@
 #     print(x)
 #     for y in a[x]:
 #         print("\t", y, ": ", a[x][y], sep="")  # работает
-
 
 # sales = {"John": {"N": 3056, "S": 8463, "E": 8441, "W": 2694},
 #          "Tom": {"N": 4832, "S": 6786, "E": 4737, "W": 3612},
@@ -3236,11 +3134,9 @@
 # except KeyError:
 #     print('Такого продавца нет.')
 
-
 # d = {"N": 3056, "S": 8463, "E": 8441, "W": 2694}
 # new_d = {value: key for key, value in d.items()}
 # print(new_d)
-
 
 # d = {"N": 1, "S": 2, "E": 3, "W": 4}
 # # new_d = {k: v for k, v in d.items() if v <= 2}
@@ -3263,7 +3159,6 @@
 # value = list(d)
 # print(value)
 
-
 # a = ["one", 1, 2, 3, "two", 10, 20, "three", 15, 36, 60, "four", -20]
 #
 # d = {}
@@ -3278,7 +3173,6 @@
 #         d[current_key].append(item)
 #
 # print(d)  # задача работает
-
 
 # d = dict(zip([1,2,3], ['one','two','three']))
 # print(d)
@@ -3296,19 +3190,16 @@
 # c = dict(zip(a, b))
 # print(c)
 
-
 # d_one = {'name':"Igor", "Last_name": "Petrov", "job": "Consultant"}
 # d_two = {'name': "Irina", "Last_name": "Irisova", "job": "Manager"}
 # for (k1, v1), (k2, v2) in zip(d_one.items(), d_two.items()):
 #     print(k1, "->", v1)
 #     print(k2, "->", v2)  # работает
 
-
 # d = ([(1, 'one'), (2, 'two'), (3, 'three')])
 # a, b = zip(*d)
 # print(a)
 # print(b)
-
 
 # a = ('one', 'two', 'three')
 # b = [1, 2, 3,]
@@ -3318,13 +3209,11 @@
 # print(s)
 # print(dict(s))
 
-
 # one = {'apple': 0.45, 'orange': 0.35}
 # two = {'pepper': 0.2, 'onion': 0.55}
 # print({**one, **two})  #{'apple': 0.45, 'orange': 0.35, 'pepper': 0.2, 'onion': 0.55}
 # for k, v in {**two, **one}.items():
 #     print(k, "->", v)
-
 
 # data = ["red", "green", "blue"]
 # num = 0
@@ -3343,7 +3232,6 @@
 # for sales, costs, m in zip(total_sales, prod_cost, month):
 #     profit = sales - costs
 #     print("Чистая прибыль в :", m, "=", profit)
-
 
 # 24.12.2023 -----------------------------------------------------
 
@@ -3401,7 +3289,6 @@
 # print(func(1))
 # print(func(1, 2, 3, 4, 5, 6, 7, ))
 
-
 # def print_score(student, *scores):
 #     print("Student Name:", student)
 #     for score in scores:
@@ -3425,7 +3312,6 @@
 #
 # print(func(5,9,7,8,4,3,2,1, k1=11, k2=31, k3=11, k4=91,d=55))
 
-
 # name = "Tom"
 # # print("Глобальная область видимости: ", id(name))
 #
@@ -3445,7 +3331,6 @@
 # bye()
 # print(name)
 
-
 # i = 5
 # def func(arg=i):
 #     print(arg)
@@ -3457,7 +3342,6 @@
 # i = 6
 # func()
 
-
 # def add_five(a):
 #     x = 2
 #
@@ -3468,12 +3352,10 @@
 #
 # print(add_five(5))
 
-
 # sum = 5
 #
 # lst = [9, 5, 8, 7, 6]
 # print(sum(lst))
-
 
 # import builtins
 #
@@ -3483,7 +3365,6 @@
 #     print(t)
 #     print(type(t))
 #     print(dir(t))
-
 
 # n = int(input("Введите количество студентов: "))
 #
@@ -3517,7 +3398,6 @@
 #
 # outer()
 
-
 # def fun1():
 #     a=6
 #
@@ -3530,7 +3410,6 @@
 #
 #
 # fun1()
-
 
 # x = 25
 # t = 0
@@ -3552,7 +3431,6 @@
 # c = x + t
 # print(c)
 
-
 # def fn1():
 #     x = 25 # 2
 #
@@ -3572,7 +3450,6 @@
 #
 # fn1() # 1
 
-
 # def outer(a1,b1,a2,d2):
 #     a = 0
 #     b = 0
@@ -3588,7 +3465,6 @@
 # res = outer(2,3,-1,4)
 # print(res) # [список [1, 7 ]]
 
-
 # Замыкание --------------------------------
 
 # def outer(n):
@@ -3603,7 +3479,6 @@
 #
 # item2 = outer(5)
 # print(item2(1))
-
 
 # def func1():
 #     a = 1
@@ -3622,7 +3497,6 @@
 #
 # func = func1()
 # print(func())
-
 
 # def func(city):
 #     s = 0
@@ -3646,13 +3520,11 @@
 
 # lambda(анонимная функция)
 
-
 # print((lambda x, y: x + y)(1, 2))
 #
 # func = lambda x, y: x + y
 # print(func(1, 2))
 # print(func('a', 'b'))
-
 
 # print((lambda x, y: x ** 2 + y ** 2)(2, 5))
 # print((lambda x, y = 5: x ** 2 + y ** 2)(2, ))
@@ -3660,9 +3532,7 @@
 # print((lambda x = 2, y = 5: x ** 2 + y ** 2)(10, 20))
 # print((lambda x = 2, y = 5: x ** 2 + y ** 2)(y = 10))
 
-
 # print((lambda *args: args)(1, 2, 3, 4, 5))
-
 
 # y = (
 #     lambda x: x * 2,
@@ -3672,7 +3542,6 @@
 # for i in y:
 #     print(i("abc__"))
 #
-
 
 # def outer(n):
 #     def inner(x):
@@ -3699,13 +3568,10 @@
 #
 # print((lambda n: lambda x: x + n)(5)(10))
 
-
 # print((lambda x: lambda y: lambda z: x + y + z) (2)(4)( 6))
-
 
 # def func(item):
 #     return item[1]
-
 
 # d = {'b':3, 'c': 1, 'a': 2}
 # print(d)
@@ -3717,7 +3583,6 @@
 # d1 = dict(lst)
 # print(d1)
 
-
 # player = [
 #     {'name':'Anton', 'last name': 'Bipykov', 'rating': 9},
 #     {'name':'Aleksey', 'last name': 'Bodny', 'rating': 10},
@@ -3728,7 +3593,6 @@
 # print(res)
 # res = sorted(player, key=lambda i: i['rating'], reverse=True)
 # print(res)
-
 
 # a =[
 #     lambda x, y: x + y,
@@ -3746,7 +3610,6 @@
 # print(a[4](5, 2))
 # print(a[5](5, 2))
 
-
 # d = {
 #     1: lambda: print("Понедельник"),
 #     2: lambda: print("Вторник"),
@@ -3759,12 +3622,9 @@
 #
 # d[6]()
 
-
 # print((lambda a, b: a if a > b else b)(15, 23))
 
-
 # print((lambda a, b, c: a if (a < b and a < c) else (b if b < c else c))(18, 19, 17))
-
 
 # f = open(r'C:\Users\User\PycharmProjects\pythonProject1\test.txt, mode= 'r')
 # f = open('test.txt', 'r')
@@ -3775,7 +3635,6 @@
 # print(f.mode)
 # print(f.name)
 # print(f.encoding)
-
 
 # f = open('test.txt', 'r')
 # print(f.read(3))
@@ -3788,7 +3647,6 @@
 # print(f.readline(9))
 # print(f.readline())
 # f.close()
-
 
 # f = open('test1.txt', 'r')
 # print(f.readlines(16))
@@ -3803,12 +3661,10 @@
 # f.close()
 # print("count =", count)  # подсчитывает количество строк в файле = 3
 
-
 # f = open("xyz.txt", "w")
 # f.write("Hello\nWorld\n")
 #
 # f.close()
-
 
 # f = open("xyz.txt", "a")
 # f.write("New text.\nOpen text in Explorer")
@@ -3819,12 +3675,10 @@
 # f.write("This is a factor")
 # f.close()
 
-
 # f = open("xyz.txt", "w")
 # line = ['This is line 1\n', 'This is line 2']
 # f.writelines(line)
 # f.close()
-
 
 # class Stack:
 #     def __init__(self):
@@ -3832,13 +3686,11 @@
 #
 # stackObject = Stack()
 
-
 # class Stack:
 #     def __init__(self):
 #         self.__stacklist = [] # инкапсуляция - нельзя переменную увидеть из вне
 # stackObject = Stack()
 # print(len(stackObject.stacklist)) # выход - AttributeError
-
 
 # class Stack:
 #     def __init__(self):
@@ -3863,7 +3715,6 @@
 # print(stackList.pop())
 # print(stackList.pop())
 
-
 # class Stack:
 #     def __init__(self):
 #         self.__stacklist = []
@@ -3885,7 +3736,6 @@
 # stackObject2.push(stackObject1.pop())
 # print(staclObject2.pop())
 
-
 # for i in range(5):
 #     nam = int(input())
 #     nam1 = int(input())
@@ -3894,11 +3744,9 @@
 #
 # print("Вызов завершён")
 
-
 # a = int(input("Введите числитель: "))  #-------------------------------- Программа при делении на 0 делить нельзя.
 # b = int(input("Введите знаменатель: "))
 # print('Результат : ', a/b if b else 'На ноль делить нельзя!!!')
-
 
 # try:
 # 	n = int(input("введите делимое : "))  #---------------------------------- программа с использованием исключений
@@ -3910,7 +3758,6 @@
 # 	print("Всё нормально вы ввели : ", n, "и", m)
 # finally:
 # 	print("конец программы")
-
 
 # n = input("введите число : ") # программа складывае равные по типу данных или конкатенация строк, строк+числа
 # m = input("введите число : ")
@@ -3932,7 +3779,6 @@
 #         print("i = ", i)
 #     i += 1
 
-
 # Class_Work 25.11.2023 ----------------------------------------------------------------------------------
 
 # for i in range(3):
@@ -3952,14 +3798,14 @@
 # for i in range(h):
 #     for j in range(w):
 #         if i == 0 or i == h - 1 or j == 0 or j == w - 1:
-#             print("*", end="")
+#             print("$", end="-")
 #         else:
 #             print(" ", end="")
 #     print()
-
+#
 # nums = [letter * 2 for letter in "Banana"]
-
-# nums = [i for i in range(30) if i % 2 == 0] # Выводит чётные числа
+#
+# nums = [i for i in range(30) if i % 2 == 0]  # Выводит чётные числа
 # print(nums)
 
 # Список
@@ -4129,7 +3975,6 @@
 #         break
 # print(b)
 
-
 #  Class_Work_from 02.12.2023-----------------------------------------------------------------------------------
 
 # a = [1, 2, 3]
@@ -4142,7 +3987,6 @@
 # print("b =",b)
 # b.append(120)
 
-
 # a = [5, 4, 1, 2, 3]
 # print(a)
 # # a.reverse()
@@ -4152,7 +3996,6 @@
 # # print(a)
 # a.sort(reverse=True)
 # print(a)
-
 
 # b =["Виталий","Сергей","Александр","Анна"]
 # b.sort(key=len, reverse=True)
@@ -4168,7 +4011,6 @@
 
 #  Генерация случайных данных  ----->----------->-------------->------------->------------->
 
-
 # print(random.random())
 # print(random.randint(3, 9))
 # print(random.randrange(3, 9))
@@ -4180,7 +4022,6 @@
 # print(random.choices(city_list, k=3))
 # random.shuffle(city_list)
 # print(city_list)
-
 
 # s = [55, 66, 77, 88, 99, 9, 8, 7, 6, 5, 4, 1, 2, 3]
 # print(random.choice(s))
@@ -4270,7 +4111,6 @@
 
 #  ----- Домашняя работа от 02,12,2023
 
-
 # import random
 #
 # print(random.sample(range(1, 10+1), 10))
@@ -4310,7 +4150,6 @@
 #         print(x, end="\t")
 #     print()
 
-
 # Домашняя работа от 04.02.2024
 # import os
 #
@@ -4326,9 +4165,7 @@
 #     elif os.path.isdir(p):
 #         print(f"{obj} - dir")
 
-
 # Class_Work_from 10.02.2024-------------------------------------------------------------------------------
-
 
 #  в классе могут быть свойства (поля, переменные)
 #  методы(функции). Имя класса пишется в верхнем регистре
@@ -4500,7 +4337,6 @@
 #
 # print("Численность роботов: ", Robot.k)
 
-
 # Class_Work_from 18.02.2024-------------------------------------------------------------------------------------------
 
 # Задача она же и домашняя, нужно будет добавить в двух вариантах прорерти и гет и сет
@@ -4600,7 +4436,6 @@
 # print()
 # acc.withdraw_money(3000)
 
-
 # @property
 # def fio(self):
 #     return self.__fio
@@ -4644,7 +4479,6 @@
 #     self.verify_weight(w)
 #     self.__weight = w
 
-
 # _str = 'I am learning Python. hello, WORLD!'  # Исходная строка.
 # start_range = _str.find('h')  # Находим индекс первого совпадения.
 # end_range = _str.rfind('h')  # Находим индекс второго совпадения.
@@ -4655,7 +4489,6 @@
 #
 #
 # data = [0, -2, 3, 9, -11, -4, -5, 6, 7, 7, -1]
-
 
 # def count_negative(lst: list) -> int:
 #     count = 0
@@ -4692,7 +4525,6 @@
 # ______________________________________________________________________________________________________________________
 #
 
-
 # def powerOf2(n):
 #     pow = 1
 #     for i in range(n):
@@ -4715,8 +4547,7 @@
 #     if i in powersOf2(6):
 #          print(i)
 
-
-# def Fib(n):  # генераьор чисел Фибоначчи
+# def Fib(n):  # генератор чисел Фибоначчи
 #     p = pp = 1
 #     for i in range(n):
 #         if i in [0, 1]:
@@ -4725,9 +4556,8 @@
 #             n = p + pp
 #             pp, p = p, n
 #             yield n
-# fibs = list(Fib(10))
+# fibs = list(Fib(25))
 # print(fibs)
-
 
 # 02.03.2024 -----------------------------------------------------------------------------------------------
 
@@ -4789,7 +4619,6 @@
 # rect = Rect(Point(30, 40), Point(70, 80))
 # rect.set_coord(Point(55.5, 45.6), Point(100, 200))
 # rect.draw_rect()
-
 
 # def __init__(self, width, height, border_size, border_style, border_color):
 #     super().__init__(width, height)
@@ -4861,9 +4690,7 @@
 # line.set_coord(Point(55, 55))
 # line.draw_line()
 
-
 # Абстрактные методы
-
 
 # class Point:
 #     def __init__(self, x, y):
@@ -4901,7 +4728,6 @@
 # class Line(Prop):
 #     def draw(self):
 #         print(f"Рисование прямоугольника: {self._sp}, {self._ep}, {self._color}, {self._}")
-
 
 # 17.03.2024
 
@@ -4956,7 +4782,6 @@
 # os.rmdir("folderizone") # удаляет
 
 # print(os.getgid() + "fdf")
-
 
 # import json
 # from random import choice
@@ -5167,7 +4992,6 @@
 # msg = tm.render(cities=cities)
 # print(msg)
 
-
 # path = [
 #     {'url': 'index', 'title': 'Главная'},
 #     {'url': 'news', 'title': 'Новости'},
@@ -5192,7 +5016,6 @@
 # print(msg)
 #
 
-
 # cars = [
 #     {'model': 'Audi', 'price': 23000},
 #     {'model': 'Skoda', 'price': 17300},
@@ -5204,7 +5027,6 @@
 # msg = tm.render(cs=cars)
 #
 # print(msg)
-
 
 # html = """
 # {% macro func_input(name, value="", type="text", size=20) %}
@@ -5221,7 +5043,6 @@
 #
 # print(msg)
 
-
 # from jinja2 import Environment, FileSystemLoader
 #
 # persons = [
@@ -5237,8 +5058,6 @@
 # msg = tm.render(users=persons, title="About Jinja")
 #
 # print(msg)
-
-
 
 # from jinja2 import Environment, FileSystemLoader
 #
@@ -5257,4 +5076,279 @@
 
 # Flask
 # Django
+# Rest.Api
+
+# n = int(input("Введите число = "))
+# a = []
+# sum_non_zero = 0
+# count_non_zero = 0
+#
+# for _ in range(n):
+#     num = int(input("-> "))
+#     if num != 0:
+#         a += [num]
+#         sum_non_zero += num
+#         count_non_zero += 1
+#
+# if count_non_zero != 0:
+#     average = sum_non_zero / count_non_zero
+#     print(f"Среднее арифметическое ненулевых элементов: {average}")
+# else:
+#     print(f"Введены только нулевые элементы.")
+
+# 25,11,2024
+# возврат из функции нескольких значений
+
+# def multy(num1, num2):
+#     return num1 * num2, num1/num2
+# prof, division = multy(15,3)
+# print("Product =", prof, "Quotin =", division)
+
+# 02.12.2024
+# Функция enumerate() в Python — это эффективный инструмент для циклов, создающий пары,
+# состоящие из счётчика и элементов итерируемого объекта. Эти пары упакованы в кортежи.
+# for i, v in enumerate(['ab', 'cd', 'ef', 'gh', 'jk', 'lm', 'no', 'pq', 'rs', 'tu', 'vw', 'xyz']):
+#     print(i, v)
+
+# 15.12.2024
+# пример инкапсуляции в Python
+# Цель инкапсуляции:
+
+# Защита данных: Предотвращение случайного изменения внутреннего состояния объекта, что может привести к непредсказуемому поведению.
+# Управление доступом: Контроль того, как другие части программы могут взаимодействовать с объектом.
+# Модульность: Скрытие деталей реализации, позволяющее вносить изменения во внутреннюю работу класса, не затрагивая внешний код, который его использует (если публичный интерфейс остается прежним).
+# Улучшение читаемости и поддерживаемости кода: Делает код более понятным и простым в обслуживании, скрывая ненужные детали.
+# Реализация инкапсуляции в Python:
+#
+# В Python нет жесткого механизма как private, protected и public в других языках. Вместо этого используются соглашения об именовании и некоторые механизмы.
+#
+# Соглашение об именовании (слабая инкапсуляция):
+#
+# _имя_атрибута: Атрибуты, начинающиеся с одного подчеркивания, считаются “защищенными”. Это соглашение говорит программистам,
+# что этот атрибут не предназначен для прямого доступа извне класса.
+# __имя_атрибута: Атрибуты, начинающиеся с двух подчеркиваний (с так называемым “name mangling”), считаются “приватными”.
+# Python автоматически меняет имя таких атрибутов, добавляя к нему имя класса. Это затрудняет доступ к ним извне. Однако, это не запрещает доступ полностью.
+# class MyClass:
+#     def __init__(self, public_var, protected_var, private_var):
+#         self.public_var = public_var  # Публичный атрибут
+#         self._protected_var = protected_var  # "Защищенный" атрибут (соглашение)
+#         self.__private_var = private_var  # "Приватный" атрибут (с name mangling)
+#
+#     def get_private_var(self): # Публичный метод доступа
+#         return self.__private_var
+#
+#     def set_private_var(self, new_val): # Публичный метод изменения
+#         if type(new_val) == int:
+#             self.__private_var = new_val
+#         else:
+#             print('Нельзя присвоить не целое значение!')
+#
+# obj = MyClass(10, 20, 30)
+#
+# print(obj.public_var)  # Доступно
+# print(obj._protected_var) # Доступно, но не рекомендуется
+# # print(obj.__private_var)  # Вызовет AttributeError
+# print(obj.get_private_var())  # Правильный доступ
+# obj.set_private_var(1500)
+# print(obj.get_private_var())
+# obj.set_private_var('string')
+# print(obj.get_private_var())
+
+# 21.12.2024
+# from rich.console import Console
+#
+# from rich.table import Table
+#
+# console = Console()
+# table = Table(title="Построение таблицы")
+#
+# table.add_column("п/п", justify="right", style="cyan", no_wrap=True)
+# table.add_column("Наименование")
+# table.add_column("Количество", justify="right")
+# table.add_column("Стоимость", justify="right")
+# table.add_column("Всего", justify="right")
+#
+# table.add_row("1", "Картошка", "30", "50руб", "1500руб")
+# table.add_row("2", "Помидоры", "20", "60руб", "1200руб")
+# table.add_row("3", "Огурцы", "15", "100руб", "1500руб")
+#
+#
+# console.print(table)
+# #                   Построение таблицы
+# # ┌─────┬──────────────┬────────────┬───────────┬─────────┐
+# # │ п/п │ Наименование │ Количество │ Стоимость │   Всего │
+# # ├─────┼──────────────┼────────────┼───────────┼─────────┤
+# # │   1 │ Картошка     │         30 │     50руб │ 1500руб │
+# # │   2 │ Помидоры     │         20 │     60руб │ 1200руб │
+# # │   3 │ Огурцы       │         15 │    100руб │ 1500руб │
+# # └─────┴──────────────┴────────────┴───────────┴─────────┘
+#
+# name = [0, 1, 2, 3, 4, 5]
+# name.append(name[1:5])
+# print(len(name))  # 7 / если убрать len[0,1,2,3,4,5[1,2,3,4]]
+# print(min(max(False, -3, -4), 2, 7))  # false
+#
+# a = {5, 6, 7}
+# a.add(8)
+# print(a)  # add добавляет в началоуникальный элемент/если он есть то игнор
+#
+#
+# def sf(a):
+#     return a % 3 != 0 and a % 5 != 0
+#
+#
+# m = filter(sf, range(1, 31))
+# print(list(m))  # [1, 2, 4, 7, 8, 11, 13, 14, 16, 17, 19, 22, 23, 26, 28, 29]
+#
+#
+# def foo(x):
+#     x[0] = ['def']
+#     x[1] = ['abc']
+#     return id(x)
+#
+#
+# q = ['abc', 'def']
+# print(id(q) == foo(q))  # True/в функции изменяется тот же объект
+#
+# a = list(map(lambda x: x ^ 2, range(10)))
+# print(a)  # [2, 3, 0, 1, 6, 7, 4, 5, 10, 11]
+
+
+# ---------------------------------------------------------------------------------------------------------------------
+# Основные типы Python
+#  строка str-'Ivan'
+#  число int - 10
+#  Логический bool - True / False
+#  Список list [1, 2, 3, 4, 5]
+#  Словарь dict{"min" : 5, 'max' : 8}
+#  Кортеж
+#  Множества
+
+# Встроенные функции / print() / type() / id() / len() / sum() / input() /
+# / round() / min() / max() / int() / str() / bool() / и т.д. эта малая часть
+#
+# name = input("Enter your name: ")
+#
+# print(dir(name.upper()))  # ['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__',
+# # '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__getstate__', '__gt__', '__hash__', '__init__',
+# # '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__',
+# # '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__',
+# # '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find',
+# # 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier',
+# # 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip',
+# # 'maketrans', 'partition', 'removeprefix', 'removesuffix', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition',
+# # 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper',
+# # 'zfill']
+# print(name.upper())
+
+# def my_name(name):
+#     print(input("Enter your name: ")
+#
+#
+# my_name("name")
+
+# --------------------------------------------------------------------------------------------------------------------
+# Генерация пароля из введённых Вами любхх уникальных символов
+# import random
+#
+# import pyperclip
+#
+#
+# def generate_password_from_lyrics(lyrics, length=12):
+#     #  Разделяем текст на слова
+#     words = lyrics.split()
+#
+#     #  Берём случайные слова и символы из текста
+#     password = ''.join(random.choice(words) for _ in range(length))
+#
+#     # Добавляем случайные числа и символы для усложнения пароля
+#     spacial_chars = "!@#$%^&*()_+"
+#     password += random.choice(spacial_chars)
+#     password += str(random.randint(0, 9))
+#
+#     #  Перемешиваем символы пароля
+#     password = ''.join(random.sample(password, len(password)))
+#
+#     #  Копируем пароль в буфер обмена
+#     pyperclip.copy(password)
+#
+#     return password
+#
+#
+# lyrics = """From Russian to Russian.25121978. For time to time"""
+#
+# password = generate_password_from_lyrics(lyrics)
+# print(f"Ваш новый пароль: {password}")# Ros.9Rte.i2oi^iu5aor1osuFntto1smsoritm7eFstm2uaFitsaRnn85ro - пароль randomный
+# print("Пароль скопирован в буфер обмена!")
+# ----------------------------------------------------------------------------------------------------------------
+
+# def print_hi(name):
+#     print(f'Hi,{name}')
+#
+#
+# if __name__ == '__main__':
+#     print_hi('PyCharm')  # Hi,PyCharm
+
+# class Solusion:
+#     def firstMissingPositive(self, nums: List[int]) -> int:
+#
+#         def swap(arr, i, j):
+#             arr[i], arr[j] = arr[j], arr[i]
+#
+#         n = len(nums)
+#
+#         for i in range(n):
+#             while 0 < nums[i] <= n and nums[i] != nums[nums[i] - 1]:
+#                 swap(nums, i, nums[i] - 1)
+#
+#         for i in range(n):
+#             if nums[i] != i + 1:
+#                 return i + 1
+#
+#         return n + 1
+#
+# nums = [1, 2, 0]  # 3 Не работает , разобраться
+
+# print("3" > "433") # сравнивает первые вхождения 3>2 - True
+
+# def foo(x, y):
+#     print(x + y)
+#
+#
+# foo(x=1, y=2)  # 3
+
+# a = "01:03:2025"
+# reg = '(0[1-9]|[12][0-9]|3[01]):(0[1-9]|1[0-2]):(19[0-9][0-9]|20[0-9][0-9])'  # шаблон на соответствие число/месяц/год
+# print(re.findall(reg, a))  # выводит как массив
+# print(re.search(reg, a).group())  # .group() выводит корректно
+
+
+# РЕКУРСИЯ
+
+# def elevator(n):
+#     if n == 0:
+#         print("Вы в подвале")
+#         return
+#     print("=>", n)
+#     elevator(n-1)
+#     print(n, end=" ")
+#
+#
+#
+# n1 = int(input("На каком Вы этаже: "))
+# elevator(n1)
+
+
+# --------------------------------------------
+
+# def sum_list(lst):
+#     res = 0
+#     if a in lst:
+#         res += a
+#     return res
+#
+#
+# print(sum_list([1, 2, 3, 4, 5]))
+
+
 

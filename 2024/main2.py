@@ -3304,3 +3304,72 @@
 #         print("vvv")
 # test2 = Test2()
 # test2.print_text()
+
+# def f(x, *args):
+#     return x * max(args)
+#
+#
+# print(f(5, 4, 12, 6))
+# Рекурсивный метод , в стек записывается по очереди из списка и достаётся в обратном положении
+# В данном примере мы проверяем числа < 0 , их 5шт
+# def negative_numbers(a):
+#     if not a:
+#         return 0
+#     else:
+#         count = negative_numbers(a[1:])
+#         if a[0] < 0:
+#             count += 1
+#         return count
+#
+#
+# lst = [-2, 3, 8, -11, -3, -2, -1, 6, 0, 0]
+# print(negative_numbers(lst)) # 5
+
+
+#  Создание телефонного справочника/удаление номера/вывод и т.д
+# class TelephoneDirectory:
+#     def __init__(self):
+#         self.telephonedirectory: dict = {}
+#
+#     def add_entry(self, name, number):
+#         self.telephonedirectory[name] = number
+#
+#     def delete_entry(self, name):
+#         self.telephonedirectory.pop(name)
+#
+#
+#     def update_entry(self, name, number):
+#         self.telephonedirectory[name] = number
+#
+#
+#     def lookup_number(self, name):
+#         return self.telephonedirectory[name]
+#
+#
+#     def __str__(self):
+#         ret_dct = ''
+#         for key, value in self.telephonedirectory.items():
+#             ret_dct += f'{key} : {value}\n'
+#         return ret_dct
+#
+#
+# myTelephoneDirectory = TelephoneDirectory()
+# myTelephoneDirectory.add_entry("Ravi", 123456)
+# myTelephoneDirectory.add_entry("Raviolli", 6543210)
+# print(myTelephoneDirectory)
+# myTelephoneDirectory.delete_entry("Raviolli")
+# myTelephoneDirectory.add_entry("Ravi", 123456)
+# myTelephoneDirectory.update_entry("Raviolli", 6543210)
+# print(myTelephoneDirectory.lookup_number("Ravi"))
+# print(myTelephoneDirectory)
+
+# def sum_list(lst):
+#     res = 0
+#     for i in lst:
+#         res += i
+#     return res
+#
+#
+# print(sum_list([1, 2, 3, 4, 5]))  # сумма элементов списка
+
+

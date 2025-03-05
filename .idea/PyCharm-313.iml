@@ -8,7 +8,7 @@
       <sourceFolder url="file://$MODULE_DIR$/second_home2/second/personal_portfolio" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/third/third53/todos" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.12 (Python_313)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.13" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
